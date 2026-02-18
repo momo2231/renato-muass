@@ -3,11 +3,19 @@ const playPause = document.getElementById("playPause");
 const volume = document.getElementById("volume");
 const enter = document.getElementById("enter");
 
+// impostazioni iniziali
 music.volume = 0.7;
+music.muted = true;
 
-// click to enter
+// click to enter (SBLOCCA AUDIO)
 enter.addEventListener("click", () => {
-  music.play();
+  music.muted = false;
+  music.currentTime = 0;
+
+  music.play().catch(err => {
+    console.log("Autoplay bloccato:", err);
+  });
+
   enter.style.display = "none";
   playPause.innerHTML = '<i class="fa-solid fa-pause"></i>';
 });
