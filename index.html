@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>RENATO.MUASS</title>
-  <meta name="description" content="RENATO.MUASS – Content Creator | Discord Community, TikTok & Spotify">
-
-<!-- OPEN GRAPH (Discord / WhatsApp preview) -->
-<meta property="og:title" content="RENATO.MUASS">
-<meta property="og:description" content="Content Creator | Entra nel mio Discord">
-<meta property="og:image" content="https://momo2231.github.io/renato-muass/assets/avatar.png">
-<meta property="og:url" content="https://momo2231.github.io/renato-muass/">
-<meta property="og:type" content="website">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ICONE -->
+  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
@@ -28,10 +19,10 @@
 
 <!-- VIDEO BACKGROUND -->
 <video id="bgVideo" autoplay muted loop playsinline>
-  <source src="assets/itachi.mp4" type="video/mp4">
+  <source src="assets/video.mp4" type="video/mp4">
 </video>
 
-<!-- MUSICA -->
+<!-- MUSIC -->
 <audio id="music" src="assets/music.mp3" loop></audio>
 
 <!-- CARD -->
@@ -41,6 +32,7 @@
 
   <h1>RENATO.MUASS <span>CONTENT CREATOR</span></h1>
 
+  <!-- BADGES -->
   <div class="badges">
     <img src="assets/badges/verified.png">
     <img src="assets/badges/nitro.png">
@@ -48,35 +40,23 @@
     <img src="assets/badges/early.png">
   </div>
 
-  <p>ENTRA NEL MIO DS</p>
+  <p class="discord">ENTRA NEL MIO DS</p>
 
   <!-- PLAYER -->
   <div class="player">
-    <button id="playPause">
-      <i class="fa-solid fa-play"></i>
-    </button>
-    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.7">
+    <button id="playPause"><i class="fa-solid fa-play"></i></button>
+    <input id="volume" type="range" min="0" max="1" step="0.01" value="0.7">
   </div>
 
   <!-- SOCIAL -->
   <div class="socials">
-    <a href="https://www.tiktok.com/@elrenato_mouhsine080?lang=it-IT" target="_blank" class="tiktok">
-      <i class="fa-brands fa-tiktok"></i>
-    </a>
-    <a href="https://discord.gg/bt6evzZGvh" target="_blank" class="discord">
-      <i class="fa-brands fa-discord"></i>
-    </a>
-    <a href="https://open.spotify.com/user/31ahng43hi2ggxgm5hfd57s5oyxu" target="_blank" class="spotify">
-      <i class="fa-brands fa-spotify"></i>
-    </a>
-    <a href="https://www.paypal.com/paypalme/BERNATIM" target="_blank" class="paypal">
-      <i class="fa-brands fa-paypal"></i>
-    </a>
+    <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://discord.gg" target="_blank"><i class="fa-brands fa-discord"></i></a>
+    <a href="https://spotify.com" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+    <a href="https://paypal.me" target="_blank"><i class="fa-brands fa-paypal"></i></a>
   </div>
 
-  <span class="views">
-  👁️ <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https://momo2231.github.io/renato-muass/" style="height:14px;vertical-align:middle">
-</span>
+</div>
 
 <script src="script.js"></script>
 </body>

@@ -3,24 +3,16 @@ const playPause = document.getElementById("playPause");
 const volume = document.getElementById("volume");
 const enter = document.getElementById("enter");
 
-// impostazioni iniziali
 music.volume = 0.7;
-music.muted = true;
 
-// click to enter (SBLOCCA AUDIO)
+// CLICK TO ENTER
 enter.addEventListener("click", () => {
-  music.muted = false;
-  music.currentTime = 0;
-
-  music.play().catch(err => {
-    console.log("Autoplay bloccato:", err);
-  });
-
+  music.play();
   enter.style.display = "none";
   playPause.innerHTML = '<i class="fa-solid fa-pause"></i>';
 });
 
-// play / pause
+// PLAY / PAUSE
 playPause.addEventListener("click", () => {
   if (music.paused) {
     music.play();
@@ -31,7 +23,7 @@ playPause.addEventListener("click", () => {
   }
 });
 
-// volume
+// VOLUME
 volume.addEventListener("input", () => {
   music.volume = volume.value;
 });
